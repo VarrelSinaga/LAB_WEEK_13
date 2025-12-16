@@ -1,0 +1,35 @@
+1. MVVM merupakan pola arsitektur perangkat lunak yang sangat populer dalam pengembangan aplikasi modern
+    Tujuannya adalah untuk memisahkan logika antarmuka pengguna (UI) dari logika bisnis dan data.
+    File Model:
+        Movie.kt
+        MovieRepository.kt
+        MovieDatabase
+    File View:
+        MainActivity.kt
+        MovieAdapter.kt
+        RecyclerViewBinding.kt
+    File ViewModel:
+        MovieViewModel.kt
+
+2. Metode "normal" yang biasa digunakan sebelum adanya Data Binding adalah findViewById. Meskipun fungsional, findViewById memiliki beberapa kelemahan dalam hal efisiensi dan keamanan yang berhasil diatasi oleh Data Binding.
+    Keuntungan:
+        1. Menghindari findViewById yang Berulang Kali
+        2. Keamanan Tipe Data (Type Safety)
+        3. Keamanan dari Null (Null Safety)
+        4. Menghubungkan Data Langsung di XML
+
+3. Alasan penting:
+        1. Menghemat Sumber Daya Sistem (Resource Efficiency)
+        2. Menyediakan Titik Akses Global (Global Point of Access)
+        3. Mencegah State yang Tidak Konsisten (State Consistency)
+
+4. Alasan penting:
+        1. Mengabstraksi Sumber Data (Decoupling Data Sources)
+        2. Menyediakan Single Source of Truth (Sumber Kebenaran Tunggal)
+        3. Memudahkan Pengujian (Improved Testability)
+        4. Meningkatkan Kemudahan Perawatan dan Skalabilitas (Maintainability & Scalability)
+
+5. Ada cara lain untuk melakukan update database dengan data terbaru:
+        1. Foreground Service
+        2. Coroutines Langsung di ViewModel
+        3. AlarmManager
